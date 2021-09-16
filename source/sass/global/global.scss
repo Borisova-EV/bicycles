@@ -1,39 +1,28 @@
-@font-face {
-  font-family: "Open Sans";
-  src:
-    url("../fonts/opensans-light.woff2") format("woff2"),
-    url("../fonts/opensans-light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+html {
+  box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Open Sans";
-  src:
-    url("../fonts/opensans-regular.woff2") format("woff2"),
-    url("../fonts/opensans-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-@font-face {
-  font-family: "Open Sans";
-  src:
-    url("../fonts/opensans-semibold.woff2") format("woff2"),
-    url("../fonts/opensans-semibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+a {
+  text-decoration: none;
 }
 
-@font-face {
-  font-family: "Open Sans";
-  src:
-    url("../fonts/opensans-bold.woff2") format("woff2"),
-    url("../fonts/opensans-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+img {
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0 none;
+  clip-path: inset(100%);
 }
