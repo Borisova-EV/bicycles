@@ -1,0 +1,8 @@
+.page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
+  margin: 0 auto;
+  font-family: "Open Sans", "Nimbus Sans L", "Helvetica", "Arial", sans-serif;
+  background-color: $white;
+}
