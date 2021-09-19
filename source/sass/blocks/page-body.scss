@@ -5,4 +5,18 @@
   margin: 0 auto;
   font-family: "Open Sans", "Nimbus Sans L", "Helvetica", "Arial", sans-serif;
   background-color: $white;
+
+  h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+
+    @media (max-width: $tablet-max-width) {
+      font-size: 24px;
+    }
+    @media (max-width: $mobile-max-width) {
+      font-size: 18px;
+    }
+  }
 }
