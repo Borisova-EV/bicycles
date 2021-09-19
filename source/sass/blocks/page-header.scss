@@ -1,16 +1,12 @@
 .page-header {
   position: relative;
+  padding-top: 10px;
   background-color: $dark-background;
-}
-
-.page-header__navigation {
-  width: 61%;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 12px;
 
   @media (max-width: $tablet-max-width) {
-    width: 100%;
     padding-left: 21px;
     padding-right: 21px;
     padding-top: 25px;
