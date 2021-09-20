@@ -1,0 +1,36 @@
+.promo {
+  color: $white;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 64px;
+
+    @media (max-width: $tablet-max-width) {
+      margin-bottom: 20px;
+      font-size: 30px;
+      line-height: 42px;
+      text-align: center;
+    }
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    opacity: 0.8;
+
+    @media (max-width: $tablet-max-width) {
+      width: 57%;
+      margin: 0 auto;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      width: 288px;
+    }
+  }
+}

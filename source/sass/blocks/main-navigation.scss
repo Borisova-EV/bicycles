@@ -1,12 +1,10 @@
-.main-navigation  {
+.main-navigation {
   ul {
     display: flex;
-    flex-wrap: wrap;
-    width: max-content;
-    min-width: 67%;
-    margin: 0 auto;
-    padding-left: 21px;
-    padding-right: 21px;
+    padding-left: 2.4%;
+    padding-right: 2.4%;
+    margin-top: 0;
+    margin-bottom: 0;
     list-style: none;
     font-weight: 300;
     font-size: 16px;
@@ -121,6 +119,8 @@
 }
 
 .main-navigation li {
+  min-width: max-content;
+
   @media (max-width: $tablet-max-width) {
     display: flex;
     justify-content: space-between;
@@ -129,7 +129,7 @@
   }
 
   &:not(:last-child) {
-    margin-right: 10%;
+    margin-right: 16.2%;
 
     @media (max-width: $tablet-max-width) {
       margin-right: 0;

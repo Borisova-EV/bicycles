@@ -1,0 +1,21 @@
+.selection {
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: -0.005em;
+    text-align: center;
+    color: $white;
+
+    @media (max-width: $tablet-max-width) {
+      margin-bottom: 27px;
+      color: $basic-black;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      margin-bottom: 20px;
+    }
+  }
+}
