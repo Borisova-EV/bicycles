@@ -2,6 +2,7 @@
   width: 100%;
   min-height: 825px;
   padding-top: 10px;
+  margin-bottom: 150px;
   background-image: url("../img/promo/bike.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +12,9 @@
   }
 
   @media (max-width: $tablet-max-width) {
+    min-height: auto;
     padding-top: 0;
+    margin-bottom: 70px;
     background-image: none;
   }
 }

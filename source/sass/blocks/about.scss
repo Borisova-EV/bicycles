@@ -1,0 +1,79 @@
+.about {
+  h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    @media (max-width: $tablet-max-width) {
+      margin-bottom: 30px;
+    }
+  }
+
+  ul {
+    width: 76.7%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 38px;
+    padding-left: 0;
+    list-style: none;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: $basic-black;
+
+    @media (max-width: $tablet-max-width) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 30px;
+      row-gap: 40px;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      display: block;
+      width: 263px;
+      font-size: 18px;
+    }
+  }
+
+  li {
+    &:not(:last-child) {
+      @media (max-width: $mobile-max-width) {
+        margin-bottom: 35px;
+      }
+    }
+
+    &::before {
+      display: block;
+      margin-bottom: 12px;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 38px;
+      letter-spacing: -1.3px;
+      color: $turquoise;
+
+      @media (max-width: $tablet-max-width) {
+        margin-bottom: 18px;
+      }
+
+      @media (max-width: $mobile-max-width) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &:first-child::before {
+      content: "01"
+    }
+
+    &:nth-child(2)::before {
+      content: "02"
+    }
+
+    &:nth-child(3)::before {
+      content: "03"
+    }
+
+    &:nth-child(4)::before {
+      content: "04"
+    }
+  }
+}
