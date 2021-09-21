@@ -1,0 +1,22 @@
+.type-bike {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  color: $basic-black;
+
+  h3 {
+    order: 1;
+    text-align: center;
+  }
+
+  img {
+    margin-bottom: 20px;
+
+    @media (max-width: $tablet-max-width) {
+      width: 270px;
+      height: 300px;
+    }
+  }
+}
