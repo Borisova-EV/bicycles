@@ -79,19 +79,4 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  border-style: none;
-  background-color: $turquoise;
-
-  @media (max-width: $tablet-max-width) {
-    width: 90px;
-    height: 90px;
-  }
-
-  @media (max-width: $mobile-max-width) {
-    width: 65px;
-    height: 65px;
-  }
 }

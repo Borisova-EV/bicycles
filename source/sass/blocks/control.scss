@@ -1,0 +1,32 @@
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border-style: none;
+  background-color: $turquoise;
+
+  @media (max-width: $tablet-max-width) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 65px;
+    height: 65px;
+  }
+
+  svg {
+    fill: $special-black;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

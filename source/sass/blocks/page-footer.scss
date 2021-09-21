@@ -86,34 +86,18 @@
   @media (max-width: $mobile-max-width) {
     justify-content: center;
   }
+}
 
-  a {
-    display: flex;
-    color: inherit;
+.page-footer__link {
+  &:not(:last-child) {
+    margin-right: 76px;
+  }
 
-    &:not(:last-child) {
-      margin-right: 76px;
-    }
+  svg {
+    margin-right: 36px;
 
-    &:visited {
-      color: inherit;
-    }
-
-    &:hover {
-      color: $turquoise;
-    }
-
-    &:active {
-      color: inherit;
-      opacity: 0.2;
-    }
-
-    svg {
-      margin-right: 36px;
-
-      @media (max-width: $tablet-max-width) {
-        margin-right: 15px;
-      }
+    @media (max-width: $tablet-max-width) {
+      margin-right: 15px;
     }
   }
 }

@@ -1,0 +1,42 @@
+.contacts-link {
+  display: flex;
+  color: inherit;
+
+  &:visited {
+    color: inherit;
+  }
+
+  &:hover {
+    color: $turquoise;
+  }
+
+  &:active {
+    color: inherit;
+    opacity: 0.2;
+  }
+
+  &--mail {
+    svg {
+      fill: $turquoise;
+    }
+
+    &:hover {
+      svg {
+        fill: rgba($basic-black, 0.5);
+      }
+    }
+  }
+
+  &--tel {
+    svg {
+      fill: none;
+      stroke: $turquoise;
+    }
+
+    &:hover {
+      svg {
+        stroke: rgba($basic-black, 0.5);
+      }
+    }
+  }
+}

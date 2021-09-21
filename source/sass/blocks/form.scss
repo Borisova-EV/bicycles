@@ -14,5 +14,12 @@
     @media (max-width: $tablet-max-width) {
       padding-left: 21px;
     }
+
+    &:hover {
+      opacity: 0.5;
+    }
+    &:focus {
+     opacity: 0.8;
+    }
   }
 }
