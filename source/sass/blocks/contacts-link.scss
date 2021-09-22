@@ -1,6 +1,7 @@
 .contacts-link {
   display: flex;
   color: inherit;
+  cursor: pointer;
 
   @media (max-width: $mobile-max-width) {
     justify-content: center;

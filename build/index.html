@@ -39,13 +39,14 @@
       </nav>
       <div class="page-header__column">
         <section class="page-header__promo promo">
+          <h1 class="visually-hidden">Интернет-магазин велосипедов Moon</h1>
           <h2>Мы продаем велосипеды</h2>
           <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         </section>
         <section class="page-header__selection selection">
           <h2 class="visually-hidden">Подбор велосипедов</h2>
           <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-          <form class="selection__form form" action="#" method="POST">
+          <form class="selection__form form" action="https://echo.htmlacademy.ru/" method="POST">
             <div class="form__name">
               <label class="visually-hidden" for="name">Введите ваше имя</label>
               <input id="name" type="text" placeholder="Введите Ваше Имя" required="">
@@ -61,7 +62,6 @@
     </div>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Интернет-магазин велосипедов Moon</h1>
     <section class="page-main__section  page-main__section--about about" id="about">
       <h2>Несколько фактов о нас</h2>
       <ul>
@@ -100,7 +100,7 @@
             <picture>
               <source type="image/webp" media="(max-width:1023px)" srcset="img/content/types/kids-bike-mobile.webp 1x, img/content/types/kids-bike-mobile@2x.webp 2x">
               <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/content/types/kids-bike.jpg" srcset="img/content/types/kids-bike.jpg 1x, img/content/types/kids-bike@2x.jpg 2x" width="342" height="512.5" alt="Детский велосипед розового с белым цвета с розовой корзиной спереди">
+              <img src="img/content/types/kids-bike.jpg" srcset="img/content/types/kids-bike.jpg 1x, img/content/types/kids-bike@2x.jpg 2x" width="342" height="512" alt="Детский велосипед розового с белым цвета с розовой корзиной спереди">
             </picture>
           </a>
         </li>
@@ -116,7 +116,7 @@
           <!-- 1х: 929px; 2x: 1858px -->
           <img src="img/content/video/video-bike-poster.jpg" srcset="img/content/video/video-bike-poster.jpg 1x, img/content/video/video-bike-poster@2x.jpg 2x" width="929" height="522" alt="Часть велосипеда на темном фоне">
         </picture>
-        <button type="button" class="video__control control">
+        <button type="button" class="video__control control" aria-label="Включить видео">
           <svg width="14" height="19" viewBox="0 0 14 19" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite_auto.svg#play"></use>
           </svg>

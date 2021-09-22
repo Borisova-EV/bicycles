@@ -27,7 +27,7 @@ function openCloseMenu() {
 openCloseMenu();
 
 try {
-  storageEmail = localStorage.getItem("email");
+  storageName = localStorage.getItem("name");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -38,10 +38,9 @@ try {
 }
 
 function submitForm() {
-  form.addEventListener('submit', (evt) => {
+  form.addEventListener('submit', () => {
     const inputName = evt.target.querySelector('#name');
     const inputTelephone = evt.target.querySelector('#telephone');
-    evt.preventDefault();
     if (inputTelephone.value && inputName.value) {
       if (isStorageSupport) {
         localStorage.setItem("telephone", inputTelephone.value);
@@ -63,7 +62,7 @@ function editingForm() {
 }
 
 const matchingPatternTelephone = (input) => {
-  const telephoneTemplate = /^[0-9]$/;
+  const telephoneTemplate =  /^(\+7)+([0-9]){10}$/;
   return telephoneTemplate.test(input.value);
 };
 
