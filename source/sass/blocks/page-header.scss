@@ -4,6 +4,7 @@
   padding-top: 10px;
   margin-bottom: 150px;
   background-image: url("../img/promo/bike.jpg");
+  background-color: $dark-background;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -71,6 +72,7 @@
       background-image: url("../img/promo/bike-tablet.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+      background-color: $dark-background;
 
       @media(min-resolution: 2dppx) {
         background-image: url("../img/promo/bike-tablet@2x.jpg");
