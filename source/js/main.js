@@ -6,6 +6,7 @@ const form = document.querySelector('.form');
 const inputFields = form.querySelectorAll('input');
 const inputTelephoneContainer = form.querySelector('.form__telephone');
 const inputNameContainer = form.querySelector('.form__name');
+const anchors = document.querySelectorAll('.main-navigation a')
 
 let isStorageSupport = true;
 let storageName = "";
@@ -78,3 +79,21 @@ function validationInputTelephone(inputTelephone) {
 
 editingForm();
 submitForm();
+
+
+function addSmoothScroll() {
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+
+      const blockID = anchor.getAttribute('href')
+
+      document.querySelector(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      })
+    })
+  }
+}
+
+addSmoothScroll();
