@@ -9,17 +9,22 @@
   &:hover {
     opacity: 0.7;
   }
+
   &:active {
     opacity: 0.4;
   }
 
   h3 {
     order: 1;
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
     text-align: center;
   }
 
   img {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 
     @media (max-width: $tablet-max-width) {
       width: 270px;

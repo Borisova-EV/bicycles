@@ -15,11 +15,27 @@
       padding-left: 21px;
     }
 
+    @media (max-width: $mobile-max-width) {
+      padding-left: 25px;
+    }
+
     &:hover {
       opacity: 0.5;
     }
+
     &:focus {
-     opacity: 0.8;
+      opacity: 0.8;
     }
   }
+}
+
+.form__telephone--error {
+  input {
+    outline-color: red;
+  }
+}
+
+.form__submit {
+  padding-left: 0;
+  padding-right: 0;
 }

@@ -1,5 +1,5 @@
 .about {
-  
+  max-width: 1400px;
   h2 {
     margin-top: 0;
     margin-bottom: 50px;
@@ -10,7 +10,7 @@
   }
 
   ul {
-    width: 76.7%;
+    width: 83.5%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -24,6 +24,7 @@
     color: $basic-black;
 
     @media (max-width: $tablet-max-width) {
+      width: 76.5%;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 30px;
       row-gap: 40px;
@@ -31,7 +32,7 @@
 
     @media (max-width: $mobile-max-width) {
       display: block;
-      width: 263px;
+      width: 89%;
       font-size: 18px;
     }
   }
@@ -39,7 +40,7 @@
   li {
     &:not(:last-child) {
       @media (max-width: $mobile-max-width) {
-        margin-bottom: 35px;
+        margin-bottom: 39px;
       }
     }
 
@@ -57,7 +58,7 @@
       }
 
       @media (max-width: $mobile-max-width) {
-        margin-bottom: 30px;
+        margin-bottom: 13px;
       }
     }
 

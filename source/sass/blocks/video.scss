@@ -26,17 +26,17 @@
 
   h2 {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 21px;
 
     @media (max-width: $tablet-max-width) {
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
   }
 
   p {
     width: 340px;
     margin-top: 0;
-    margin-bottom: 56px;
+    margin-bottom: 53px;
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
@@ -46,11 +46,12 @@
 
     @media (max-width: $tablet-max-width) {
       width: 429px;
-      margin-bottom: 40px;
+      margin-bottom: 39px;
     }
+
     @media (max-width: $mobile-max-width) {
       width: 288px;
-      margin-bottom: 50px;
+      margin-bottom: 52px;
     }
 
   }
@@ -77,6 +78,16 @@
 
 .video__control {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 43.5%;
+  left: 46.5%;
+
+  @media (max-width: $tablet-max-width) {
+    top: 33.5%;
+    left: 41%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    top: 28.5%;
+    left: 39%;
+  }
 }

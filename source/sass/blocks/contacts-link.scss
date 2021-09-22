@@ -2,6 +2,10 @@
   display: flex;
   color: inherit;
 
+  @media (max-width: $mobile-max-width) {
+    justify-content: center;
+  }
+
   &:visited {
     color: inherit;
   }
@@ -28,6 +32,10 @@
   }
 
   &--tel {
+width: 200px;
+align-self: center;
+justify-content: space-between;
+
     svg {
       fill: none;
       stroke: $turquoise;

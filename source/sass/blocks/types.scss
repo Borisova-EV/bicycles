@@ -1,5 +1,7 @@
 .types {
+ 
   background-color: $light-background;
+
   h2 {
     margin-top: 0;
     margin-bottom: 50px;
@@ -10,11 +12,11 @@
   }
 
   ul {
-    width: 78.2%;
+    width: 81%;
     max-width: 1126px;
     margin: 0 auto;
     display: grid;
-    column-gap: 3.4%;
+    column-gap: 4.5%;
     grid-template-columns: repeat(3, 1fr);
     padding-left: 0;
     list-style: none;
@@ -22,7 +24,7 @@
     @media (max-width: $tablet-max-width) {
       width: 590px;
       column-gap: 50px;
-      row-gap: 50px;
+      row-gap: 27px;
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -39,7 +41,7 @@
 
     &:not(:last-child) {
       @media (max-width: $mobile-max-width) {
-        margin-bottom: 40px;
+        margin-bottom: 19px;
       }
     }
 
@@ -53,8 +55,8 @@
       &::before {
         content: "";
         position: absolute;
-        top: 156px;
-        left: -90px;
+        top: 167px;
+        left: -60px;
         width: 180px;
         height: 180px;
         border-radius: 50%;
@@ -65,8 +67,12 @@
           height: 127px;
           border-width: 18px;
           top: auto;
-          bottom: 105px;
-          left: -40px;
+          bottom: 49px;
+          left: -37px;
+        }
+
+        @media (max-width: $mobile-max-width) {
+          left: -25px;
         }
       }
     }
@@ -97,8 +103,8 @@
         content: "";
         position: absolute;
         z-index: 3;
-        bottom: 15%;
-        right: -19px;
+        bottom: 7.5%;
+        right: -23px;
         width: 47px;
         height: 47px;
         border: 8px solid $turquoise;
@@ -119,7 +125,7 @@
       &::before {
         content: "";
         position: absolute;
-        top: -39px;
+        top: -31px;
         right: -36px;
         z-index: 3;
         width: 95px;
@@ -128,9 +134,15 @@
         border: 17px solid $turquoise;
 
         @media (max-width: $tablet-max-width) {
+          top: -20px;
+          right: -25px;
           width: 68px;
           height: 68px;
           border-width: 13px;
+        }
+
+        @media (max-width: $mobile-max-width) {
+          right: -14px;
         }
       }
     }

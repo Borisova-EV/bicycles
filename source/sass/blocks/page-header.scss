@@ -38,13 +38,16 @@
 
 .page-header__content {
   position: relative;
-  width: 67%;
+  width: 64%;
+  min-width: 921px;
+  max-width: 1400px;
   margin: 0 auto;
   padding-left: 22px;
   padding-right: 22px;
 
   @media (max-width: $tablet-max-width) {
     width: 100%;
+    min-width: 100%;
     margin: 0;
     padding-top: 25px;
     padding-left: 21px;
@@ -88,7 +91,7 @@
 .page-header__column {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 20.7%;
+  column-gap: 20%;
 
   @media (max-width: $tablet-max-width) {
     display: block;
@@ -110,7 +113,7 @@
 
 .page-header__selection {
   min-width: 300px;
-  padding-left: 21px;
+  padding-left: 25px;
 
   @media (max-width: $tablet-max-width) {
     min-width: auto;

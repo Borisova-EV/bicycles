@@ -10,6 +10,7 @@
     color: $white;
 
     @media (max-width: $tablet-max-width) {
+      font-size: 18px;
       margin-bottom: 27px;
       color: $basic-black;
     }
