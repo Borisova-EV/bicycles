@@ -3,9 +3,10 @@
 const menu = document.querySelector('.main-navigation');
 const menuButton = menu.querySelector('.main-navigation__button');
 const form = document.querySelector('.form');
-const inputFields = form.querySelectorAll('input');
 const inputTelephoneContainer = form.querySelector('.form__telephone');
+const inputTelephone = inputTelephoneContainer.querySelector('input');
 const inputNameContainer = form.querySelector('.form__name');
+const inputName = inputNameContainer.querySelector('input');
 const anchors = document.querySelectorAll('.main-navigation a')
 
 let isStorageSupport = true;
@@ -38,42 +39,35 @@ try {
 }
 
 function submitForm() {
-  form.addEventListener('submit', () => {
-    const inputName = evt.target.querySelector('#name');
-    const inputTelephone = evt.target.querySelector('#telephone');
-    if (inputTelephone.value && inputName.value) {
-      if (isStorageSupport) {
-        localStorage.setItem("telephone", inputTelephone.value);
-        localStorage.setItem("name", inputName.value);
-      };
+  form.addEventListener('submit', (evt) => {
+    if (!inputTelephone.value || !inputName.value) {
+      evt.preventDefault();
+    } else if (isStorageSupport) {
+      localStorage.setItem("telephone", inputTelephone.value);
+      localStorage.setItem("name", inputName.value);
     }
   })
 }
 
-function editingForm() {
-  inputFields.forEach((input) => {
-    input.addEventListener('input', function (evt) {
-      console.log(evt.target);
-      if (evt.target.matches('#telephone')) {
-        validationInputTelephone(evt.target)
-      }
-    })
-  })
-}
-
-const matchingPatternTelephone = (input) => {
-  const telephoneTemplate =  /^(\+7)+([0-9]){10}$/;
-  return telephoneTemplate.test(input.value);
+function matchingPatternTelephone() {
+  const telephoneTemplate = /^[0-9]+$/;
+  return telephoneTemplate.test(inputTelephone.value);
 };
 
-function validationInputTelephone(inputTelephone) {
-  if (inputTelephone.value === 0 || !matchingPatternTelephone(inputTelephone)) {
+function validationInputTelephone() {
+  if (!matchingPatternTelephone()) {
     inputTelephoneContainer.classList.add('form__telephone--error');
     inputTelephone.setCustomValidity('Введите номер в правильном формате');
   } else {
     inputTelephone.setCustomValidity('');
     inputTelephoneContainer.classList.remove('form__telephone--error');
   };
+}
+
+function editingForm() {
+  inputTelephone.addEventListener('input', function () {
+    validationInputTelephone()
+  })
 }
 
 editingForm();
