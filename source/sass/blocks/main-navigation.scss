@@ -23,6 +23,7 @@
   &--opened ul {
     @media (max-width: $tablet-max-width) {
       position: absolute;
+      z-index: 10;
       top: 0;
       right: 0;
       display: block;
@@ -43,7 +44,7 @@
     @media (max-width: $tablet-max-width) {
       display: flex;
       flex-direction: column;
-          }
+    }
 
     ul {
       @media (max-width: $tablet-max-width) {
@@ -83,7 +84,7 @@
 
   .main-navigation--opened & {
     @media (max-width: $tablet-max-width) {
-      z-index: 2;
+      z-index: 20;
       height: 52px;
       background-color: $white;
     }
@@ -159,6 +160,7 @@
   cursor: pointer;
 
   @media (max-width: $tablet-max-width) {
+    width: 100%;
     height: 60px;
     padding-top: 17px;
     padding-left: 16px;
