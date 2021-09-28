@@ -9,7 +9,6 @@
     background-color: $white;
     font-size: 15px;
     line-height: 24px;
-    color: rgba($dark-grey, 0.5);
 
     @media (max-width: $tablet-max-width) {
       padding-left: 21px;
@@ -17,6 +16,14 @@
 
     @media (max-width: $mobile-max-width) {
       padding-left: 25px;
+    }
+
+    &::-webkit-input-placeholder {
+      color: rgba($dark-grey, 0.5);
+    }
+
+    &::-moz-placeholder {
+      color: rgba($dark-grey, 0.5);
     }
 
     &:hover {

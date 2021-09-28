@@ -1,5 +1,6 @@
 .about {
   max-width: 1400px;
+
   h2 {
     margin-top: 0;
     margin-bottom: 50px;
@@ -10,7 +11,7 @@
   }
 
   ul {
-    width: 83.5%;
+    width: 86%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -23,6 +24,7 @@
     letter-spacing: -0.5px;
     text-align: center;
     color: $basic-black;
+    counter-reset: advantages;
 
     @media (max-width: $tablet-max-width) {
       width: 76.5%;
@@ -39,6 +41,7 @@
   }
 
   li {
+
     &:not(:last-child) {
       @media (max-width: $mobile-max-width) {
         margin-bottom: 39px;
@@ -46,6 +49,8 @@
     }
 
     &::before {
+      counter-increment: advantages;
+      content: "0"counter(advantages)"";
       display: block;
       margin-bottom: 12px;
       font-weight: bold;
@@ -61,22 +66,6 @@
       @media (max-width: $mobile-max-width) {
         margin-bottom: 13px;
       }
-    }
-
-    &:first-child::before {
-      content: "01"
-    }
-
-    &:nth-child(2)::before {
-      content: "02"
-    }
-
-    &:nth-child(3)::before {
-      content: "03"
-    }
-
-    &:nth-child(4)::before {
-      content: "04"
     }
   }
 }

@@ -1,4 +1,5 @@
 .main-navigation {
+
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -36,14 +37,15 @@
     }
 
     @media (max-width: $mobile-max-width) {
+      position: fixed;
       width: 100%;
+      height: 100vh;
     }
   }
 
   &--nojs {
     @media (max-width: $tablet-max-width) {
-      display: flex;
-      flex-direction: column;
+      display: contents;
     }
 
     ul {
@@ -53,9 +55,21 @@
         background-color: $white;
         order: 1;
         border-bottom: none;
+        padding-top: 30px;
         padding-left: 0;
         padding-right: 0;
         width: 100%;
+        order: 3;
+      }
+    }
+
+    .main-navigation__logo {
+      @media (max-width: $tablet-max-width) {
+        margin-bottom: 84px;
+      }
+
+      @media (max-width: $mobile-max-width) {
+        margin-bottom: 70px;
       }
     }
   }
@@ -123,15 +137,19 @@
 
 .main-navigation li {
   min-width: max-content;
+  padding-top: 9px;
+  padding-bottom: 9px;
 
   @media (max-width: $tablet-max-width) {
     display: flex;
     justify-content: space-between;
     padding-right: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: $light-background;
   }
 
-  &:not(:last-child) {
+  &:not(:nth-child(4n)) {
     margin-right: 16.2%;
 
     @media (max-width: $tablet-max-width) {
@@ -153,8 +171,6 @@
 
 .main-navigation a:not(.logo) {
   display: block;
-  padding-top: 9px;
-  padding-bottom: 9px;
   color: $white;
   opacity: 0.7;
   cursor: pointer;
@@ -163,6 +179,7 @@
     width: 100%;
     height: 60px;
     padding-top: 17px;
+    padding-bottom: 17px;
     padding-left: 16px;
     color: $grey;
     opacity: 1;

@@ -26,6 +26,7 @@
 
   img {
     margin-bottom: 13px;
+    object-fit: cover;
 
     @media (max-width: $tablet-max-width) {
       width: 270px;

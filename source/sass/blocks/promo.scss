@@ -1,6 +1,11 @@
 .promo {
   color: $white;
 
+  @media (max-width: $mobile-max-width) {
+    width: 288px;
+  }
+
+
   h2 {
     margin-top: 0;
     margin-bottom: 24px;

@@ -8,8 +8,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media(min-resolution: 2dppx) {
-    background-image: url("../img/promo/bike@2x.jpg");
+  @media (min-width: $desktop-min-width) {
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/promo/bike@2x.jpg");
+    }
   }
 
   @media (max-width: $tablet-max-width) {
@@ -61,13 +63,19 @@
     padding-right: 16px;
   }
 
+  &--nojs {
+    @media (max-width: $tablet-max-width) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &::before {
     @media (max-width: $tablet-max-width) {
       content: "";
       position: absolute;
       width: 100%;
-      min-height: 340px;
-      height: 50%;
+      height: 340px;
       top: 0;
       left: 0;
       z-index: -1;
@@ -111,7 +119,7 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    margin-bottom: 140px;
+    margin: 0 auto 140px;
   }
 }
 
@@ -127,6 +135,6 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    width: 288px;
+    width: 100%;
   }
 }

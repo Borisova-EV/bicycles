@@ -66,14 +66,18 @@
     }
 
     @media (max-width: $mobile-max-width) {
-      width: 288px;
-      height: 162px;
+      width: 100%;
+      height: auto;
     }
   }
 }
 
 .video__content {
   position: relative;
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+  }
 }
 
 .video__control {

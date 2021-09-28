@@ -4,5 +4,8 @@
   min-height: 100%;
   margin: 0 auto;
   font-family: "Open Sans", "Nimbus Sans L", "Helvetica", "Arial", sans-serif;
-  background-color: $white;
+
+  &--opened-menu {
+    overflow: hidden;
+  }
 }

@@ -3,10 +3,6 @@
   color: inherit;
   cursor: pointer;
 
-  @media (max-width: $mobile-max-width) {
-    justify-content: center;
-  }
-
   &:visited {
     color: inherit;
   }
@@ -33,9 +29,7 @@
   }
 
   &--tel {
-width: 200px;
-align-self: center;
-justify-content: space-between;
+    width: 200px;
 
     svg {
       fill: none;
