@@ -25,7 +25,7 @@
     ul {
       @media (max-width: $tablet-max-width) {
         position: fixed;
-        overflow-y: scroll;
+        overflow: scroll;
         z-index: 10;
         top: 0;
         right: 0;
